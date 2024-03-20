@@ -1,0 +1,6 @@
+scikit-learn
+numpy
+mpmath
+matplotlib
+cdt 
+rpy2

@@ -1,0 +1,36 @@
+BEGIN LOGGING FOR FILE: ./data/experiment1.txt
+Ranked Edge between Nodes: 0 and 1
+[1.]: [0],[3.63797881e-12]
+Added to q: [-3.63797881e-12] : [18237.32094493]
+Ranked Edge between Nodes: 0 and 2
+[0.93195586]: [1236.7739383],[1770.92847163]
+Added to q: [534.15453333] : [16939.28047012]
+Added to q: [-534.15453333] : [15993.16897023]
+Ranked Edge between Nodes: 1 and 2
+[0.99856385]: [26.19153901],[0]
+Added to q: [-26.19153901] : [18211.12940591]
+Considering Edge from : 0 to: 2 costing: [-534.15453333]
+*******Added edge from 0 to 2 with cost: [-534.15453333]
+Function Id was: 3
+Considering Edge from : 1 to: 2 costing: [-3082.34348819]
+*******Added edge from 1 to 2 with cost: [-3082.34348819]
+Function Id was: 3
+Considering Edge from : 2 to: 1 costing: [-26.19153901]
+stale node
+Edge is cyclic
+Considering Edge from : 0 to: 1 costing: [-3.63797881e-12]
+Pvalue test unsuccessful...this edge is rejected. k=[3.63797881e-12]
+Considering Edge from : 2 to: 0 costing: [534.15453333]
+total flips: 0
+##################
+Begin Pruning....
+Considering Node: 0
+Finished Node: 0
+***************************
+Considering Node: 1
+Finished Node: 1
+***************************
+Considering Node: 2
+Finished Node: 2
+***************************
+END LOGGING FOR FILE: ./data/experiment1.txt
