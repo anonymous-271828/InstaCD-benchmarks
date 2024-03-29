@@ -283,9 +283,9 @@ class DAG:
 					sub_set = set(best_set);
 					removed_index = master_set - sub_set;
 					removed_index = next(iter(removed_index));
-					self.logger.WriteLog('Removing: '+self.dict[removed_index]);
+					#self.logger.WriteLog('Removing: '+self.dict[removed_index]);
 					self.Final_graph[target_node][removed_index]=None;
-					self.logger.WriteLog(str(self.dict[target_node])+ ' cost update to ' +  str(best_cost)+ ' from '+str(self.Nodes[target_node].GetCurrentBits()));
+					#self.logger.WriteLog(str(self.dict[target_node])+ ' cost update to ' +  str(best_cost)+ ' from '+str(self.Nodes[target_node].GetCurrentBits()));
 					self.Nodes[target_node].SetCurrentBits(best_cost);
 			
 			self.logger.WriteLog('Finished Node: '+str(self.dict[target_node]));

@@ -50,6 +50,7 @@ class GlobeWrapper:
 			variables=np.delete(variables,0,0);
 		self.filename=filename;
 		self.vars=variables;
+		print(self.vars)
 
 	def run(self):
 		normalized_vars=Standardize(self.vars);
@@ -100,3 +101,12 @@ class GlobeWrapper:
 					network[j][i] =1;	#need to flip indices (i,j to j,i) here because GLobe stores adjaceny matrix from Child to Parent
 				
 		return network
+	
+	@staticmethod
+	def network_to_edge_list(network):
+		edges = []
+		for i in range(network.shape[0]):
+			for j in range(network.shape[1]):
+				if network[i][j] == 1:
+					edges.append((i, j))
+		return edges

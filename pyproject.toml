@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "InstaCD-benchmarks"
+version = "0.0.1"
+description = "Codebase for benchmarking instance-based causal discovery."
+license = {text = "MIT License"}
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+py-modules = ['instacd_benchmarks']
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
